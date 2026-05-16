@@ -22,9 +22,7 @@ to finish before running the second.
 
 Then run `/pr-audit` in any git repository to use it.
 
-## Plugins in this marketplace
-
-### pr-audit
+## pr-audit
 
 Automated pull request review for Claude Code. It commits your changes, opens a
 PR on GitHub, reviews the code with specialized reviewers running in parallel,
