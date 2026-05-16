@@ -1,0 +1,7 @@
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+
+# Private notes — not for the public repo
+NOTES.md

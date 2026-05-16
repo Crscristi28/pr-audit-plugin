@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pr-audit-plugin",
+  "description": "Marketplace for pr-audit — automated code review and pull request workflows in Claude Code.",
+  "owner": {
+    "name": "Crscristi28",
+    "url": "https://github.com/Crscristi28"
+  },
+  "plugins": [
+    {
+      "name": "pr-audit",
+      "description": "Automated PR review with parallel specialized subagents. Posts inline comments and one-click fix suggestions on GitHub, then offers to apply the fixes in the same session.",
+      "author": {
+        "name": "Crscristi28",
+        "url": "https://github.com/Crscristi28"
+      },
+      "category": "development",
+      "keywords": [
+        "code-review",
+        "pull-request",
+        "github",
+        "security",
+        "subagents",
+        "automation"
+      ],
+      "source": "./pr-audit"
+    }
+  ]
+}

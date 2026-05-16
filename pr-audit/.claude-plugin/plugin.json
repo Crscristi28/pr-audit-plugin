@@ -1,0 +1,20 @@
+{
+  "name": "pr-audit",
+  "version": "0.6.0",
+  "description": "Automated PR review with parallel specialized subagents. Posts inline comments and one-click fix suggestions on GitHub, then offers to apply the fixes in the same session.",
+  "author": {
+    "name": "Crscristi28",
+    "url": "https://github.com/Crscristi28"
+  },
+  "homepage": "https://github.com/Crscristi28/pr-audit-plugin",
+  "repository": "https://github.com/Crscristi28/pr-audit-plugin",
+  "keywords": [
+    "code-review",
+    "pull-request",
+    "github",
+    "security",
+    "subagents",
+    "automation"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+name: Check Version Bump
+
+on:
+  pull_request:
+    paths:
+      - 'pr-audit/skills/**'
+      - 'pr-audit/agents/**'
+
+permissions:
+  contents: read
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify version was bumped
+        run: |
+          OLD=$(git show "origin/${{ github.base_ref }}:pr-audit/.claude-plugin/plugin.json" | grep '"version"' | head -1)
+          NEW=$(grep '"version"' pr-audit/.claude-plugin/plugin.json | head -1)
+          if [ "$OLD" = "$NEW" ]; then
+            echo "::error::Plugin content changed but the version field in pr-audit/.claude-plugin/plugin.json was not bumped. Bump the version before merging."
+            exit 1
+          fi
+          echo "Version bumped: $OLD -> $NEW"
