@@ -8,12 +8,20 @@ would review your PR, but in a couple of minutes.
 
 ## Install
 
-In Claude Code:
+In Claude Code, run these **two commands one at a time** — wait for the first
+to finish before running the second.
 
-```
-/plugin marketplace add Crscristi28/pr-audit-plugin
-/plugin install pr-audit@pr-audit-plugin
-```
+1. Add the marketplace:
+
+   ```
+   /plugin marketplace add https://github.com/Crscristi28/pr-audit-plugin
+   ```
+
+2. Install the plugin:
+
+   ```
+   /plugin install pr-audit@pr-audit-plugin
+   ```
 
 ## Usage
 

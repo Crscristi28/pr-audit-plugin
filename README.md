@@ -5,15 +5,22 @@ pull request review.
 
 ## Install
 
-In Claude Code:
+In Claude Code, run these **two commands one at a time** — wait for the first
+to finish before running the second.
 
-```
-/plugin marketplace add Crscristi28/pr-audit-plugin
-/plugin install pr-audit@pr-audit-plugin
-```
+1. Add the marketplace:
 
-That adds this marketplace and installs the plugin. Run `/pr-audit` in any git
-repository to use it.
+   ```
+   /plugin marketplace add https://github.com/Crscristi28/pr-audit-plugin
+   ```
+
+2. Install the plugin:
+
+   ```
+   /plugin install pr-audit@pr-audit-plugin
+   ```
+
+Then run `/pr-audit` in any git repository to use it.
 
 ## Plugins in this marketplace
 
